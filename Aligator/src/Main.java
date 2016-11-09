@@ -21,25 +21,35 @@ public class Main {
         int[][] stuff = {
                 {4534, 76, 98345, 988, 123},
                 {272, 624, 843, 233, 4554},
-                {125, 268, 3567, 100, 76}
+                {125, 268, 3567, -100, 76}
         };
 
         /*
             tady se dela v podstate to same jako v te metode
             muzes si s tim pohrat, rozbit ji na mensi kousky a pouzit je tu
          */
+
+        // index X
         int dirtyLowestSluttyValIndex = 0;
+        // index Y
+        int deepTrohartOfColumnIndex = 0;
+        // val
         int sluttyLowestVal = Integer.MAX_VALUE;
 
-        for (int i = 0; i < stuff.length; i++){
+        for (int i = 0; i < stuff.length; i++)
+        {
             int tmpWhoreIndex = getFuckingLowestValueIndex(stuff[i]);
-            if(stuff[i][tmpWhoreIndex] < sluttyLowestVal){
+
+            if(stuff[i][tmpWhoreIndex] < sluttyLowestVal)
+            {
                 dirtyLowestSluttyValIndex = tmpWhoreIndex;
+                deepTrohartOfColumnIndex = i;
                 sluttyLowestVal = stuff[i][tmpWhoreIndex];
             }
         }
 
         // tadaaa
-        System.out.println("Val: " + sluttyLowestVal + " Index: " + dirtyLowestSluttyValIndex);
+        System.out.println("Val: " + sluttyLowestVal + " Index pos X: "
+                + dirtyLowestSluttyValIndex + " pos Y: " + deepTrohartOfColumnIndex);
     }
 }
