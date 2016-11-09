@@ -32,7 +32,7 @@ public class Main {
         // index X
         int dirtyLowestSluttyValIndex = 0;
         // index Y
-        int deepTrohatOfColumnIndex = 0;
+        int deepThroatOfColumnIndex = 0;
         // val
         int sluttyLowestVal = Integer.MAX_VALUE;
 
@@ -43,13 +43,13 @@ public class Main {
             if(stuff[i][tmpWhoreIndex] < sluttyLowestVal)
             {
                 dirtyLowestSluttyValIndex = tmpWhoreIndex;
-                deepTrohatOfColumnIndex = i;
+                deepThroatOfColumnIndex = i;
                 sluttyLowestVal = stuff[i][tmpWhoreIndex];
             }
         }
 
         // tadaaa
         System.out.println("Val: " + sluttyLowestVal + " Index pos X: "
-                + dirtyLowestSluttyValIndex + " pos Y: " + deepTrohatOfColumnIndex);
+                + dirtyLowestSluttyValIndex + " pos Y: " + deepThroatOfColumnIndex);
     }
 }
